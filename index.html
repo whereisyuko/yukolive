@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ff93cb">
+<title>YUKO LIVE — Pop-up Events</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="page">
+  <div class="content">
+    <img class="character" src="assets/character.png" alt="Yuko masked character">
+    <h1>LIVE EVENTS</h1>
+    <h2>WHERE SHOULD I<br>PERFORM NEXT?</h2>
+    <p class="intro">JOIN THE YUKO LIVE LIST. PICK YOUR<br class="optional"> CITY AND GET NOTIFIED WHEN I'M<br class="optional"> PERFORMING NEAR YOU!</p>
+    <form id="signup" class="form" novalidate>
+      <label for="city">YOUR CITY</label>
+      <div class="field"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-7.2 8-13A8 8 0 0 0 4 9c0 5.8 8 13 8 13Zm0-9.2a3.8 3.8 0 1 0 0-7.6 3.8 3.8 0 0 0 0 7.6Z"/></svg><input id="city" name="city" autocomplete="address-level2" maxlength="80" required placeholder=""></div>
+      <label for="phone">PHONE NUMBER</label>
+      <div class="field"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 2 3 4.5c-1 7.5 8.2 16.7 16 16l3-3.5-6.2-4-2.8 2.5c-2.1-.8-3.8-2.5-4.6-4.6L11 8.2 6.5 2Z"/></svg><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="30" placeholder=""></div>
+      <label for="email">EMAIL ADDRESS</label>
+      <div class="field"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2zM2 6l10 8 10-8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder=""></div>
+      <p class="hint">Add an email, phone number, or both.</p>
+      <div class="consents"><label class="check"><input type="checkbox" id="emailConsent"> Email me Yuko event updates</label><label class="check"><input type="checkbox" id="smsConsent"> Text me Yuko event updates</label></div>
+      <p class="privacy">We'll only contact you using the methods you choose. You can unsubscribe anytime. <a href="privacy.html">Privacy information</a>.</p>
+      <button id="submit" type="submit">PUT MY CITY ON<br>THE MAP!!</button>
+      <p id="status" role="status" aria-live="polite"></p>
+    </form>
+    <section class="survey-section" aria-label="Yuko live show survey">
+      <h2>HELP BRING YUKO TO YOUR CITY!</h2>
+      <p class="survey-intro">WOULD YOU COME TO A YUKO SHOW? HELP ME PLAN WHERE TO PERFORM NEXT!</p>
+      <a id="survey-link" class="survey-button" href="#" target="_blank" rel="noopener noreferrer">TAKE THE FAN<br>SURVEY!!</a>
+      <p id="survey-note" class="survey-note" role="status" aria-live="polite"></p>
+    </section>
+  </div>
+  <footer>YUKO LIVE <span>·</span> POP UP EVENTS <span>·</span> EXCLUSIVE UPDATES <span>·</span> NEW DROPS</footer>
+</main>
+<script src="config.js"></script><script src="script.js"></script>
+</body>
+</html>
